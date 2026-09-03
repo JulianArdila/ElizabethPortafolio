@@ -10,6 +10,29 @@ _site/
 # Additional Ruby/bundler ignore for when you run: bundle install
 /vendor
 
+# Third-party fonts whose license prohibits redistribution/web embedding —
+# see CLAUDE.md "Fonts". Never commit these.
+/mermaid/
+/mermaid.zip
+/Mermaid1001.woff2
+# "Bright Sunlist" demo build (Letterena Studios) — personal-use only, no
+# commercial license attached. The .otf/.ttf are DEMO VERSION builds per
+# their own internal font name records.
+/bright_sunlist/
+/bright_sunlist.zip
+
+# Full-resolution originals kept as a local safety net before resizing
+# images for the web (see CLAUDE.md "Images"). Not needed in the repo.
+/.originals-backup/
+
+# Raw source-photo drop zone — full-resolution originals (some already
+# processed into upload/album/, see CLAUDE.md "Images"). Not a web asset.
+/upload/julian.zip
+/upload/Commercial/
+
+# macOS Finder metadata
+.DS_Store
+
 # Specific ignore for GitHub Pages
 # GitHub Pages will always use its own deployed version of pages-gem
 # This means GitHub Pages will NOT use your Gemfile.lock and therefore it is

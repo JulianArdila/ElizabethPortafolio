@@ -1,258 +1,210 @@
 <!doctype html>
-
-
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-	<title>Shutter</title>
-
 	<meta charset="utf-8">
-
+	<title>Elizabeth — Photography</title>
+	<meta name="description" content="Elizabeth is a photographer. A visual journal of her work, told in light, shadow, and stillness.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<link rel="stylesheet" href="css/shutter-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=WindSong&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/tokens.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="dark-skin">
+<body>
 
-	<!-- Container -->
-	<div id="container">
-		<!-- Header
-		    ================================================== -->
-		<header class="clearfix left-style">
+	<a class="skip-link" href="#main">Skip to content</a>
 
-			<a class="navbar-brand" href="index.html">
-				<img src="images/logo2.png" alt="">
-			</a>
+	<header id="site-header" class="site-header">
+		<a class="wordmark" href="#hero"><span class="wordmark-accent">E</span>lizabeth</a>
+		<button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+			<span></span><span></span><span></span>
+		</button>
+		<nav id="site-nav" class="site-nav">
+			<a href="#about">About</a>
+			<a href="#work">Work</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
 
-			<a class="open-close-leftmenu" href="#">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
+	<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-			<div class="left-menu">
-				<nav class="menu">
-					<ul class="navigate-menu">
-						<li><a class="active drop-link" href="#">Home</a>
-							<ul class="second-level">
-								<li><a href="#" class="back-main-menu"><i class="fa fa-exchange"></i></a></li>
-								<li><a href="index.html">Home Default</a></li>
-								<li><a href="home-full-border.html">Fullwidth Border</a></li>
-								<li><a href="home-grid-fullmenu.html">Grid Full Menu</a></li>
-								<li><a href="home-fullscreen.html">Fullscreen</a></li>
-								<li><a href="home-masonry-leftmenu.html">Left Menu Masonry</a></li>
-								<li><a href="home-video.html">Home Video</a></li>
-								<li><a href="home-showcase.html">Showcase style</a></li>
-								<li><a href="home-gallery.html">Gallery style</a></li>
-								<li><a href="home-portrait.html">Portrait</a></li>
-								<li><a href="home-onepage.html">One Page</a></li>
-								<li><a href="home-album.html">Album</a></li>
-							</ul>
-						</li>
-						<li><a class="drop-link" href="#">About</a>
-							<ul class="second-level">
-								<li><a href="#" class="back-main-menu"><i class="fa fa-exchange"></i></a></li>
-								<li><a href="about-me.html">About Me 1</a></li>
-								<li><a href="about-me2.html">About Me 2</a></li>
-								<li><a href="about-us.html">About Us</a></li>
-							</ul>
-						</li>
-						
-						<li><a class="drop-link" href="#">Features</a>
-							<ul class="second-level">
-								<li><a href="#" class="back-main-menu"><i class="fa fa-exchange"></i></a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="comming-soon.html">Comming Soon</a></li>
-								<li><a href="error-404.html">Error 404</a></li>
-							</ul>
-						</li>
-						
-						<li><a class="drop-link" href="#">Gallery</a>
-							<ul class="second-level">
-								<li><a href="#" class="back-main-menu"><i class="fa fa-exchange"></i></a></li>
-								<li><a href="gallery-col2.html">Column 2</a></li>
-								<li><a href="gallery-col3.html">Column 3</a></li>
-								<li><a href="gallery-col4.html">Column 4</a></li>
-								<li><a href="gallery-flowing.html">Flowing</a></li>
-								<li><a href="gallery-fullgrid.html">Full Grid</a></li>
-								<li><a href="gallery-fullscreen.html">Fullscreen</a></li>
-								<li><a href="gallery-parallax.html">Parallax</a></li>
-								<li><a href="gallery-pinterest.html">Pinterest</a></li>
-								<li><a href="gallery-pinterest-full.html">Pinterest Full</a></li>
-								<li><a href="gallery-split.html">Gallery Split</a></li>
-								<li><a href="gallery-video.html">Gallery Video</a></li>
-							</ul>
-						</li>
-						<li><a class="drop-link" href="#">Blog</a>
-							<ul class="second-level">
-								<li><a href="#" class="back-main-menu"><i class="fa fa-exchange"></i></a></li>
-								<li><a href="blog.html">Blog Grid</a></li>
-								<li><a href="blog-standard.html">Blog Standard</a></li>
-								<li><a href="single-post.html">Single Post</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-				<ul class="social-icons">
-					<li><a class="facebook" href="#"><i class="fa fa-facebook-square"></i></a></li>
-					<li><a class="twitter" href="#"><i class="fa fa-twitter-square"></i></a></li>
-					<li><a class="pinterest" href="#"><i class="fa fa-pinterest-square"></i></a></li>
-					<li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-					<li><a class="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>
-				</ul>
+	<main id="main">
+
+		<section id="hero" class="section hero">
+			<div class="hero-media" data-parallax data-parallax-speed="0.25">
+				<img
+					src="upload/album/1.jpg"
+					srcset="upload/album/1.jpg 1x, upload/album/1@2x.jpg 2x"
+					alt="Placeholder — replace with Elizabeth's signature hero photograph"
+					loading="eager">
 			</div>
-
-		</header>
-		<!-- End Header -->
-
-		<!-- photos-section 
-			================================================== -->
-		<section class="photos-section masonry">
-			<ul class="filter">
-				<li><a class="active" href="#" data-filter="*">All</a></li>
-				<li><a href="#" data-filter=".latest">Latest</a></li>
-				<li><a href="#" data-filter=".popular">Popular</a></li>
-				<li><a href="#" data-filter=".random">Random</a></li>
-				<li><a href="#" data-filter=".oldest">Oldest</a></li>
-			</ul>
-			<div class="photos-box iso-call">
-
-				<div class="photo-post latest random">
-					<img src="upload/masonry/1.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post latest">
-					<img src="upload/masonry/2.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post popular random">
-					<img src="upload/masonry/3.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post latest">
-					<img src="upload/masonry/4.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post popular">
-					<img src="upload/masonry/5.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post latest popular">
-					<img src="upload/masonry/7.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post random">
-					<img src="upload/masonry/6.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post popular oldest">
-					<img src="upload/masonry/8.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post random oldest">
-					<img src="upload/masonry/9.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post popular">
-					<img src="upload/masonry/10.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post random oldest">
-					<img src="upload/masonry/11.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post oldest">
-					<img src="upload/masonry/12.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
-				<div class="photo-post popular oldest">
-					<img src="upload/masonry/13.jpg" alt="">
-					<div class="hover-box">
-						<h2><a href="#">Empty coffee cup</a></h2>
-						<p><a class="likes" href="#">120 <i class="fa fa-heart"></i></a></p>
-					</div>
-				</div>
-
+			<div class="hero-copy">
+				<h1 class="hero-title">Light,<br>held<br>still.</h1>
+				<p class="hero-tagline">A photography journal in black, white, and everything between.</p>
 			</div>
 		</section>
-		<!-- End portfolio section -->
 
-		<!-- footer 
-			================================================== -->
-		<footer class="footer-center">
-			<a class="go-top" href="#">
-				<i class="fa fa-chevron-up"></i>
-			</a>
-			<div class="container">
-				<p class="copyright-line">All rights reserved 2018. Made with love and passion</p>
+		<section id="about" class="section about">
+			<div class="about-media" data-reveal>
+				<img
+					src="upload/showcase/s1.jpg"
+					srcset="upload/showcase/s1.jpg 1x, upload/showcase/s1@2x.jpg 2x"
+					alt="Placeholder — replace with a portrait of Elizabeth or a behind-the-scenes photograph"
+					loading="lazy">
 			</div>
+			<div class="about-copy" data-reveal>
+				<h2>About</h2>
+				<!-- Once real bio text replaces this placeholder, wrap its first letter in
+				     <span class="drop-cap">…</span> for the ornate initial-cap treatment. -->
+				<p>[Placeholder bio — Elizabeth's real introduction goes here: how she started, what draws her to a scene, the thread that runs through her work.]</p>
+				<p>[Placeholder — a second short paragraph on her approach or the kind of stories she likes to tell through the camera.]</p>
+			</div>
+		</section>
 
-		</footer>
-		<!-- End footer -->
+		<section id="flatlay" class="section flatlay">
+			<h2 class="flatlay-heading" data-reveal>Contact Sheet</h2>
+			<div class="flatlay-grid">
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/3.jpg" srcset="upload/album/3.jpg 1x, upload/album/3@2x.jpg 2x" alt="Placeholder — contact sheet print 1" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/gallery/2.jpg" srcset="upload/gallery/2.jpg 1x, upload/gallery/2@2x.jpg 2x" alt="Placeholder — contact sheet print 2" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/masonry/1.jpg" srcset="upload/masonry/1.jpg 1x, upload/masonry/1@2x.jpg 2x" alt="Placeholder — contact sheet print 3" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/5.jpg" srcset="upload/album/5.jpg 1x, upload/album/5@2x.jpg 2x" alt="Placeholder — contact sheet print 4" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/showcase/3.jpg" srcset="upload/showcase/3.jpg 1x, upload/showcase/3@2x.jpg 2x" alt="Placeholder — contact sheet print 5" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/gallery/4.jpg" srcset="upload/gallery/4.jpg 1x, upload/gallery/4@2x.jpg 2x" alt="Placeholder — contact sheet print 6" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/masonry/4.jpg" srcset="upload/masonry/4.jpg 1x, upload/masonry/4@2x.jpg 2x" alt="Placeholder — contact sheet print 7" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/7.jpg" srcset="upload/album/7.jpg 1x, upload/album/7@2x.jpg 2x" alt="Placeholder — contact sheet print 8" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/nat1.jpg" srcset="upload/album/nat1.jpg 1x, upload/album/nat1@2x.jpg 2x" alt="Placeholder — contact sheet print 9" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/ocean1.jpg" srcset="upload/album/ocean1.jpg 1x, upload/album/ocean1@2x.jpg 2x" alt="Placeholder — contact sheet print 10" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/sport1.jpg" srcset="upload/album/sport1.jpg 1x, upload/album/sport1@2x.jpg 2x" alt="Placeholder — contact sheet print 11" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/bird1.jpg" srcset="upload/album/bird1.jpg 1x, upload/album/bird1@2x.jpg 2x" alt="Placeholder — contact sheet print 12" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/food1.jpg" srcset="upload/album/food1.jpg 1x, upload/album/food1@2x.jpg 2x" alt="Placeholder — contact sheet print 13" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/peop1.jpg" srcset="upload/album/peop1.jpg 1x, upload/album/peop1@2x.jpg 2x" alt="Placeholder — contact sheet print 14" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/ret1.jpg" srcset="upload/album/ret1.jpg 1x, upload/album/ret1@2x.jpg 2x" alt="Placeholder — contact sheet print 15" loading="lazy">
+				</div>
+				<div class="flatlay-item" data-reveal>
+					<img src="upload/album/child1.jpg" srcset="upload/album/child1.jpg 1x, upload/album/child1@2x.jpg 2x" alt="Placeholder — contact sheet print 16" loading="lazy">
+				</div>
+			</div>
+		</section>
 
-	</div>
-	<!-- End Container -->
+		<section id="work" class="section work-intro" data-reveal>
+			<h2>Selected Work</h2>
+		</section>
 
-	<div class="preloader">
-		<img alt="" src="images/loader.gif">
-	</div>
-	
-	<script src="js/shutter-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+		<article class="chapter chapter--diptych" id="chapter-01" data-chapter="01">
+			<div class="chapter-media" data-parallax data-parallax-speed="0.12">
+				<img data-reveal src="upload/gallery/1l.jpg" srcset="upload/gallery/1l.jpg 1x, upload/gallery/1l@2x.jpg 2x" alt="Placeholder — series 01, frame 1" loading="lazy">
+				<img data-reveal src="upload/gallery/1r.jpg" srcset="upload/gallery/1r.jpg 1x, upload/gallery/1r@2x.jpg 2x" alt="Placeholder — series 01, frame 2" loading="lazy">
+			</div>
+			<div class="chapter-copy" data-reveal>
+				<span class="chapter-index">01</span>
+				<h3 class="chapter-title">[Series Title]</h3>
+				<p class="chapter-desc">[Placeholder — a sentence or two describing this series: where it was shot, what it's about, why it matters to her.]</p>
+			</div>
+		</article>
 
-	
+		<article class="chapter chapter--mosaic" id="chapter-02" data-chapter="02">
+			<div class="chapter-media" data-parallax data-parallax-speed="0.12">
+				<img data-reveal src="upload/masonry/2.jpg" srcset="upload/masonry/2.jpg 1x, upload/masonry/2@2x.jpg 2x" alt="Placeholder — series 02, frame 1" loading="lazy">
+				<img data-reveal src="upload/masonry/5.jpg" srcset="upload/masonry/5.jpg 1x, upload/masonry/5@2x.jpg 2x" alt="Placeholder — series 02, frame 2" loading="lazy">
+				<img data-reveal src="upload/masonry/9.jpg" srcset="upload/masonry/9.jpg 1x, upload/masonry/9@2x.jpg 2x" alt="Placeholder — series 02, frame 3" loading="lazy">
+			</div>
+			<div class="chapter-copy" data-reveal>
+				<span class="chapter-index">02</span>
+				<h3 class="chapter-title">[Series Title]</h3>
+				<p class="chapter-desc">[Placeholder — a sentence or two describing this series.]</p>
+			</div>
+		</article>
+
+		<article class="chapter chapter--grid" id="chapter-03" data-chapter="03">
+			<div class="chapter-media" data-parallax data-parallax-speed="0.12">
+				<img data-reveal src="upload/album/2.jpg" srcset="upload/album/2.jpg 1x, upload/album/2@2x.jpg 2x" alt="Placeholder — series 03, frame 1" loading="lazy">
+				<img data-reveal src="upload/album/4.jpg" srcset="upload/album/4.jpg 1x, upload/album/4@2x.jpg 2x" alt="Placeholder — series 03, frame 2" loading="lazy">
+				<img data-reveal src="upload/album/6.jpg" srcset="upload/album/6.jpg 1x, upload/album/6@2x.jpg 2x" alt="Placeholder — series 03, frame 3" loading="lazy">
+				<img data-reveal src="upload/album/8.jpg" srcset="upload/album/8.jpg 1x, upload/album/8@2x.jpg 2x" alt="Placeholder — series 03, frame 4" loading="lazy">
+			</div>
+			<div class="chapter-copy" data-reveal>
+				<span class="chapter-index">03</span>
+				<h3 class="chapter-title">[Series Title]</h3>
+				<p class="chapter-desc">[Placeholder — a sentence or two describing this series.]</p>
+			</div>
+		</article>
+
+		<article class="chapter chapter--portrait" id="chapter-04" data-chapter="04">
+			<div class="chapter-media" data-parallax data-parallax-speed="0.12">
+				<img data-reveal src="upload/showcase/1.jpg" srcset="upload/showcase/1.jpg 1x, upload/showcase/1@2x.jpg 2x" alt="Placeholder — series 04, frame 1" loading="lazy">
+				<img data-reveal src="upload/showcase/2.jpg" srcset="upload/showcase/2.jpg 1x, upload/showcase/2@2x.jpg 2x" alt="Placeholder — series 04, frame 2" loading="lazy">
+			</div>
+			<div class="chapter-copy" data-reveal>
+				<span class="chapter-index">04</span>
+				<h3 class="chapter-title">[Series Title]</h3>
+				<p class="chapter-desc">[Placeholder — a sentence or two describing this series.]</p>
+			</div>
+		</article>
+
+		<article class="chapter chapter--wide" id="chapter-05" data-chapter="05">
+			<div class="chapter-media" data-parallax data-parallax-speed="0.12">
+				<img data-reveal src="upload/gallery/3.jpg" srcset="upload/gallery/3.jpg 1x, upload/gallery/3@2x.jpg 2x" alt="Placeholder — series 05, closing frame" loading="lazy">
+			</div>
+			<div class="chapter-copy" data-reveal>
+				<span class="chapter-index">05</span>
+				<h3 class="chapter-title">[Series Title]</h3>
+				<p class="chapter-desc">[Placeholder — a sentence or two describing this series.]</p>
+			</div>
+		</article>
+
+		<section id="contact" class="section contact" data-reveal>
+			<h2>Let's talk</h2>
+			<p>[Placeholder — a short invitation to get in touch about a shoot, collaboration, or print.]</p>
+			<a class="contact-cta" href="mailto:hello@elizabeth-photography.example?subject=Photography%20Inquiry">
+				hello@elizabeth-photography.example
+			</a>
+			<!--
+				Future upgrade: if a real contact form is wanted, wire it to Formspree
+				(https://formspree.io) with <form action="https://formspree.io/f/XXXXX" method="POST">.
+				Not reproducing the old AJAX form here — it posted to a nonexistent
+				contact.php and could never work on static GitHub Pages hosting.
+			-->
+		</section>
+
+	</main>
+
+	<footer id="site-footer" class="site-footer">
+		<p>&copy; 2026 Elizabeth. All rights reserved.</p>
+	</footer>
+
+	<script src="js/main.js" defer></script>
 </body>
 </html>

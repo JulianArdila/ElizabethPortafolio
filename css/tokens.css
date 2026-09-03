@@ -1,0 +1,59 @@
+/* Design tokens — colors, type, spacing, motion. Edit values here to re-theme the whole site. */
+
+:root {
+	/* Color — deliberately monochrome, no accent color */
+	--color-bg: #f7f6f2;
+	--color-bg-raised: #ffffff;
+	--color-fg: #0f0f0f;
+	--color-fg-muted: #4a4a4a;
+
+	--gray-100: #f1f0ec;
+	--gray-200: #e2e0d9;
+	--gray-300: #c9c6bc;
+	--gray-400: #9d9a90;
+	--gray-500: #716f68;
+	--gray-600: #4a4844;
+	--gray-700: #2c2b28;
+	--gray-800: #1a1a18;
+	--gray-900: #0f0f0f;
+
+	--overlay-scrim: rgba(15, 15, 15, 0.55);
+
+	/* Dark header/nav surface (sits above imagery) */
+	--color-header-bg: rgba(15, 15, 15, 0.0);
+	--color-header-bg-scrolled: rgba(15, 15, 15, 0.92);
+	--color-header-fg: #f7f6f2;
+
+	/* Type */
+	--font-display: 'Playfair Display', serif;
+	--font-body: 'Montserrat', sans-serif;
+	--font-accent: 'WindSong', cursive; /* decorative swash accent — use sparingly (initials/drop-caps only) */
+
+	--fs-hero: clamp(3rem, 9vw, 7.5rem);
+	--fs-h2: clamp(1.8rem, 4vw, 3rem);
+	--fs-h3: clamp(1.4rem, 2.6vw, 2rem);
+	--fs-body: 1rem;
+	--fs-small: 0.85rem;
+
+	--lh-tight: 1.05;
+	--lh-normal: 1.6;
+
+	/* Spacing scale */
+	--space-1: 0.5rem;
+	--space-2: 1rem;
+	--space-3: 1.5rem;
+	--space-4: 2.5rem;
+	--space-5: 4rem;
+	--space-6: 6rem;
+	--space-7: 9rem;
+	--space-8: 13rem;
+
+	/* Motion */
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--dur-reveal: 900ms;
+	--dur-fast: 300ms;
+
+	/* Layout */
+	--content-max: 1400px;
+	--edge-pad: clamp(1.25rem, 4vw, 4rem);
+}
