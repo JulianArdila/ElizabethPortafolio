@@ -28,7 +28,6 @@ _site/
 # Raw source-photo drop zone — full-resolution originals (some already
 # processed into upload/album/, see CLAUDE.md "Images"). Not a web asset.
 /upload/julian.zip
-/upload/Commercial/
 
 # macOS Finder metadata
 .DS_Store
