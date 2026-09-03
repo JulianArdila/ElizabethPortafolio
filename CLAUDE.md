@@ -5,17 +5,16 @@ Guidance for working on this repository.
 ## What this is
 
 **Elizabeth Portfolio** — a single-page, immersive photography portfolio.
-Hero (with a mouse-follow focus effect) → About → a scattered "Contact Sheet"
-flat-lay gallery → five "chapter" sections (one per photo series) → Contact,
-with scroll-triggered reveal and parallax animations throughout. Hand-written
-**vanilla HTML + CSS + JS** — no framework, no build step, no dependencies.
-Deployed via **GitHub Pages**.
+Hero → About → a scattered "Contact Sheet" flat-lay gallery → seven "chapter"
+sections (one per photo series) → Contact, with scroll-triggered reveal and
+parallax animations throughout. Hand-written **vanilla HTML + CSS + JS** — no
+framework, no build step, no dependencies. Deployed via **GitHub Pages**.
 
 The site currently ships with a **mix of Elizabeth's real photos and
-placeholder images/copy** — real photos have started replacing placeholders
-in `upload/album/` (see "Images" below); the rest of the site still has
-placeholder copy. Every remaining placeholder is marked so it's easy to find
-and swap — see "Swapping in real content" below.
+placeholder images/copy** — real photos are in `upload/commercial/`,
+`upload/food/`, and `upload/interior/` (see "Images" below); the rest of the
+site still has placeholder copy/images. Every remaining placeholder is
+marked so it's easy to find and swap — see "Swapping in real content" below.
 
 ## Project layout
 
@@ -27,11 +26,15 @@ css/
 js/
   main.js            # All behavior: scroll-reveal, parallax, nav, scroll-progress bar, loupe
 upload/
-  album/              # Placeholder photos — hero + chapter 03 (square grid) + flat-lay prints
-  gallery/             # Placeholder photos — chapter 01 (diptych) + chapter 05 (wide) + flat-lay prints
-  masonry/             # Placeholder photos — chapter 02 (mosaic) + flat-lay prints
-  showcase/            # Placeholder photos — about portrait + chapter 04 (portrait pair) + flat-lay prints
+  commercial/          # Real photos — hero + chapter 03 (square grid) + flat-lay prints
+  food/                 # Real photos — chapter 06 (mosaic) + flat-lay prints (flat-N.jpg)
+  interior/             # Real photos — chapter 07 (landscape grid)
+  album/                # Placeholder photos — chapter 03's 4th tile + flat-lay prints
+  gallery/               # Placeholder photos — chapter 01 (diptych) + chapter 05 (wide) + flat-lay prints
+  masonry/               # Placeholder photos — chapter 02 (mosaic) + flat-lay prints
+  showcase/               # Placeholder photos — about portrait + chapter 04 (portrait pair) + flat-lay prints
 mermaid/             # Scott Simpson's "Mermaid" font files — NOT used on the site, see Fonts below
+bright_sunlist/      # Letterena Studios' "Bright Sunlist" demo font — NOT used, see Fonts below
 ```
 
 There is no `scss/`, no Bootstrap/jQuery, no `images/` theme chrome, and no
@@ -57,11 +60,13 @@ refresh the browser.
 ### Adding or removing a "chapter" (work section)
 
 Each chapter is a self-contained `<article class="chapter chapter--VARIANT" id="chapter-NN">`
-block in `index.html`. Five layout variants already exist in `css/style.css`:
+block in `index.html`. Six layout variants already exist in `css/style.css`:
 `chapter--diptych`, `chapter--mosaic`, `chapter--grid`, `chapter--portrait`,
-`chapter--wide`. To add a chapter, copy an existing `<article>` block whose
-variant fits, swap the images/text, and give it a unique `id`. No CSS or JS
-changes are needed. To remove one, delete its `<article>` block.
+`chapter--wide`, `chapter--landscape-grid` (four wide 3:2 tiles — for series
+like interiors where a square crop would lose too much of the framing). To
+add a chapter, copy an existing `<article>` block whose variant fits, swap
+the images/text, and give it a unique `id`. No CSS or JS changes are needed.
+To remove one, delete its `<article>` block.
 
 ### Scroll animation attributes
 

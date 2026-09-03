@@ -9,7 +9,7 @@
  *   6. About
  *   7. Flat-lay (contact sheet)
  *   8. Work intro
- *   9. Chapters (shared + 5 layout variants)
+ *   9. Chapters (shared + 6 layout variants)
  *   10. Reveal / parallax states
  *   11. Contact
  *   12. Footer
@@ -534,6 +534,17 @@ a {
 }
 .chapter--grid .chapter-media img {
 	aspect-ratio: 1 / 1;
+}
+
+/* Landscape grid — four wide tiles, for series where the horizontal framing
+   matters (interiors, spaces) and a square crop would lose too much */
+.chapter--landscape-grid .chapter-media {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-2);
+}
+.chapter--landscape-grid .chapter-media img {
+	aspect-ratio: 3 / 2;
 }
 
 /* Portrait pair — two tall frames */
